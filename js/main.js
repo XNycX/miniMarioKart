@@ -63,3 +63,11 @@ function comprobarEquipos() {
                     document.getElementById("kartGanador").src = "img/" + equipo2.marca + ".png";
                 }
             }
+            document.getElementById("coche1").src = "img/" + equipo1.marca + ".png";
+            document.getElementById("coche2").src = "img/" + equipo2.marca + ".png";
+            document.getElementById("contadorCoche1").innerHTML = "Metros recorridos: " + metrosEquipo1.toFixed(2);
+            document.getElementById("contadorCoche2").innerHTML = "Metros recorridos: " + metrosEquipo2.toFixed(2);
+        }, 1000)
+    
+    }
+}
