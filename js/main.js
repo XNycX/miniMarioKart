@@ -51,3 +51,15 @@ function comprobarEquipos() {
         let metrosRecorridos = window.setInterval(function () {
             metrosEquipo1 += Math.random() * (200 - 50) + 50;
             metrosEquipo2 += Math.random() * (200 - 50) + 50;
+            if (metrosEquipo1 >= metrosGanar || metrosEquipo2 >= metrosGanar) {
+                document.getElementById("botonResultado").style.display = "block";
+                clearInterval(metrosRecorridos);
+                if (metrosEquipo1 > metrosEquipo2) {
+                    console.log(document.getElementById("kartGanador").src = "img/" + equipo1.marca + ".png")
+                    document.getElementById("kartGanador").src = "img/" + equipo1.marca + ".png";
+                }
+                else {
+                    console.log(equipo2)
+                    document.getElementById("kartGanador").src = "img/" + equipo2.marca + ".png";
+                }
+            }
