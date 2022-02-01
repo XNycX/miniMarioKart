@@ -93,3 +93,11 @@ object-fit: contain;
     filter: grayscale(100%);
     opacity: 0.5;
 }
+
+
+.designScreen3 {
+    background-color: black;
+
+    height: 100vh;
+    width: 100vw;
+}
