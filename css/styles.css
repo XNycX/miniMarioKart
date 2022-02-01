@@ -49,3 +49,40 @@ body {
     margin-top: 1em;
     object-fit: contain;
 }
+
+.designScreen2 {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+   
+}
+.designScreen2 img{
+height: 20em;
+width: 20em;
+object-fit: contain;
+}
+
+.selectyourCharacter{
+    background-color: black;
+    color: red;
+    font-size: 2em;
+    font-weight: bold;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.seleccionPersonajes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-style: ridge;
+    border-width: 0.5em;
+    border-color: blue;
+    object-fit: contain;
+}
