@@ -36,6 +36,9 @@ const selectKart = (numeroCoche) => {
         setTimeout(() => {
             cambiaPantalla(3);
         }, 2500)
+        
+        comprobarEquipos()
+
     }
 
 
