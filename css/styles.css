@@ -86,3 +86,10 @@ object-fit: contain;
     border-color: blue;
     object-fit: contain;
 }
+
+
+.kartSelected{
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
