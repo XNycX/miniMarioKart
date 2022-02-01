@@ -118,3 +118,21 @@ object-fit: contain;
     border-color: blue;
 }
 
+.espacioVacio{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+}
+.contadorMetros{
+    background-color: black;
+    color: red;
+    display: flex;
+    font-family: "Formula1-Bold";
+    font-size: 1.5em;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: top;
+    height: 30vh;
+}
