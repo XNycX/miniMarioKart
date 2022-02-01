@@ -25,3 +25,28 @@ let coche6 = new Coche("Kart", "daisy", 200, 1900, 70);
 let coche7 = new Coche("Kart", "bowser", 200, 1900, 55);
 let coche8 = new Coche("Kart", "yoshi", 190, 1750, 90);
 
+
+let allCars = {
+    1: coche1,
+    2: coche2,
+    3: coche3,
+    4: coche4,
+    5: coche5,
+    6: coche6,
+    7: coche7,
+    8: coche8,
+
+};
+
+
+//Generando variables basicas de entorno
+
+let equipo1 = "";
+
+let equipo2 = "";
+
+
+// let corredor1 = "";
+// let corredor2 = "";
+
+let ganador = "";
