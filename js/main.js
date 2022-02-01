@@ -40,3 +40,14 @@ const selectKart = (numeroCoche) => {
 
 
 }
+let metrosEquipo1 = 0;
+let metrosEquipo2 = 0;
+let metrosGanar = 3000;
+
+
+function comprobarEquipos() {
+    
+    if ((equipo1 !== "") && (equipo2 !== "")){
+        let metrosRecorridos = window.setInterval(function () {
+            metrosEquipo1 += Math.random() * (200 - 50) + 50;
+            metrosEquipo2 += Math.random() * (200 - 50) + 50;
