@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+/* img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+} */
+/* .contenedorGeneral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+
+.designScreen1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+
+    height: 100%;
+    width: 100%;
+}
+.designScreen1 p{
+    display: flex;
+    font-weight: 900;
+    background-color: black;
+    font-size: 1em;
+
+}
+
+.designScreen1 img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40em;
+    width: 70em;
+    margin-top: 1em;
+    object-fit: contain;
+}
