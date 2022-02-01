@@ -118,6 +118,12 @@ object-fit: contain;
     border-color: blue;
 }
 
+.designScreen4 {
+    background-color: violet;
+
+    height: 100vh;
+    width: 100vw;
+}
 .espacioVacio{
     background-color: black;
     display: flex;
