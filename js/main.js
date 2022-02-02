@@ -64,10 +64,10 @@ const comprobarEquipos = () => {
                 document.getElementById("botonResultado").style.display = "block";
                 clearInterval(metrosRecorridos);
                 if (metrosEquipo1 > metrosEquipo2) {
-                    document.getElementById('ganador').innerHTML += 'EL GANADOR ES ' + equipo1.nombre.toUpperCase() 
+                    document.getElementById('ganador').innerHTML += 'EL GANADOR ES ' + equipo1.nombre.toUpperCase();
                     document.getElementById("kartGanador").src = "img/" + equipo1.nombre + ".png";
                 } else {
-                    document.getElementById('ganador').innerHTML += 'EL GANADOR ES' + equipo2.nombre.toUpperCase() 
+                    document.getElementById('ganador').innerHTML += 'EL GANADOR ES' + equipo2.nombre.toUpperCase();
                     document.getElementById("kartGanador").src = "img/" + equipo2.nombre + ".png";
                 }
             }
@@ -76,7 +76,7 @@ const comprobarEquipos = () => {
             document.getElementById('btnAcelerar').addEventListener('click', acelerar)
             document.getElementById("contadorCoche1").innerHTML = "Metros recorridos: " + metrosEquipo1.toFixed(0);
             document.getElementById("contadorCoche2").innerHTML = "Metros recorridos: " + metrosEquipo2.toFixed(0);
-        }, 1000)
+        }, 800)
     }
 }
 

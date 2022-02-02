@@ -10,6 +10,7 @@ body {
     width: 100vw;
     background-color: black;
 }
+
 /* img {
     height: 100%;
     width: 100%;
@@ -29,14 +30,22 @@ body {
     background-color: black;
     color: white;
 
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 }
-.designScreen1 p{
+
+.designScreen1 p {
     display: flex;
     font-weight: 900;
     background-color: black;
-    font-size: 1em;
+    color: white;
+    font-weight: bolder;
+    border-radius: 1em;
+    border-color: red;
+    border-style: solid;
+    padding: 1em;
+
+    font-size: 2em;
 
 }
 
@@ -50,7 +59,6 @@ body {
     object-fit: contain;
 }
 
-
 .designScreen2 {
     background-color: black;
     display: flex;
@@ -59,25 +67,30 @@ body {
     align-items: center;
     height: 50vh;
     width: 100vw;
-   
-}
-.designScreen2 img{
-height: 20em;
-width: 20em;
-object-fit: contain;
+    object-fit: contain;
+
 }
 
-.selectyourCharacter{
+.designScreen2 img {
+    height: 20em;
+    width: 20em;
+    display: flex;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectyourCharacter {
     background-color: black;
     color: red;
     font-size: 2em;
-    font-weight: bold;  
+    font-weight: bold;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.seleccionPersonajes{
+.seleccionPersonajes {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -90,8 +103,8 @@ object-fit: contain;
 }
 
 
-.kartSelected{
-    -webkit-filter: grayscale(100%); 
+.kartSelected {
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     opacity: 0.5;
 }
@@ -108,7 +121,8 @@ object-fit: contain;
     height: 90vh;
     width: 90vw;
 }
-#coche1{
+
+#coche1 {
     height: 25em;
     display: flex;
     align-items: center;
@@ -117,9 +131,10 @@ object-fit: contain;
     border-width: 0.5em;
     border-color: blue;
     margin-top: 1em;
-   
+
 }
-#coche2{
+
+#coche2 {
     height: 25em;
     display: flex;
     align-items: center;
@@ -141,14 +156,16 @@ object-fit: contain;
     height: 90vh;
     width: 100vw;
 }
-.espacioVacio{
+
+.espacioVacio {
     background-color: black;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 0em;
 }
-.contadorMetros{
+
+.contadorMetros {
     background-color: black;
     color: red;
     display: flex;
@@ -158,28 +175,29 @@ object-fit: contain;
     align-items: center;
     height: 0em;
 }
-.reiniciar{
+
+.reiniciar {
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 0em;
-    
+
 }
 
-.reiniciar p{
+.reiniciar p {
     color: white;
     font-weight: bolder;
     border-radius: 1em;
     border-color: red;
     border-style: solid;
     padding: 1em;
-    
+
     font-size: 2em;
 
 }
 
-#botonResultado{
+#botonResultado {
     background-color: black;
     display: flex;
     justify-content: center;
@@ -187,7 +205,7 @@ object-fit: contain;
     height: 0em;
 }
 
-#botonResultado p{
+#botonResultado p {
     color: black;
     font-weight: bolder;
     border-radius: 1em;
@@ -196,7 +214,8 @@ object-fit: contain;
     padding: 1em;
     background-color: yellow;
 }
-.ganador{
+
+.ganador {
     background-color: black;
     color: red;
     font-size: 2em;
@@ -206,23 +225,31 @@ object-fit: contain;
     align-items: center;
     height: 10rem;
 }
-#btnAcelerar{
+
+#btnAcelerar {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    
+
 }
-#btnAcelerar img{
-    justify-content:center;
+
+#btnAcelerar img {
+    justify-content: center;
     align-items: center;
     margin-left: 6em;
     height: 12em;
 }
-#btnAcelerar:hover:active{
 
-    
-
+#btnAcelerar:hover,
+#botonResultado p:hover,
+.reiniciar p:hover,
+.designScreen1 p:hover,
+.seleccionPersonajes:hover {
+    cursor: pointer;
 }
 
-
+#btnAcelerar:hover:active {
+    transform: translateY(0.2em);
+    transition: 0.1s;
+}

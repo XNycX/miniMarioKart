@@ -12,10 +12,10 @@
 
 <body>
     <!-- PANTALLA DE INICIO -->
-    <section id="pantalla1" onclick="cambiaPantalla(2)">
+    <section id="pantalla1">
         <div class="designScreen1">
-            <img src="./img/mario-kart-8-deluxe-nintendo-switch-art.png" alt="">
-            <section>
+            <img src="img/mario-kart-8-deluxe-nintendo-switch-art.png" alt="">
+            <section onclick="cambiaPantalla(2)">
                 <p>Haz clic para continuar</p>
             </section>
         </div>
@@ -49,7 +49,7 @@
             <div class="">
                 <img class="seleccionPersonajes" id="coche1" src="" alt="Coche1" />
                 <div id="btnAcelerar"><img src="img/button.png" alt="Acelerar"></div>
-                
+
             </div>
             <img class="seleccionPersonajes" id="coche2" src="" alt="Coche2" />
         </div>
@@ -59,17 +59,20 @@
             <div id="contadorCoche2">Metros recorridos:</div>
     </section>
     <div class="espacioVacio">
-        <div id="botonResultado" style="display:none"
-        onclick="cambiaPantalla(4)"><P>MOSTRAR GANADOR</P></div>
+        <div id="botonResultado" style="display:none" onclick="cambiaPantalla(4)">
+            <P>MOSTRAR GANADOR</P>
+        </div>
     </div>
     <!-- PANTALLA DEL GANADOR -->
 
     <section id="pantalla4" style="display:none">
         <div class="designScreen4">
-        <div class="ganador" id="ganador"></div>
+            <div class="ganador" id="ganador"></div>
             <img class="seleccionPersonajes" id="kartGanador" src="" alt="kartGanador" />
         </div>
-        <div class="reiniciar" onclick="cleanGame()" ><p>Reiniciar juego</p></div>
+        <div class="reiniciar" onclick="cleanGame()">
+            <p>Reiniciar juego</p>
+        </div>
     </section>
 
 
