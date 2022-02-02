@@ -25,6 +25,7 @@ let coche6 = new Coche("Kart", "daisy", 200, 1900, 70);
 let coche7 = new Coche("Kart", "bowser", 200, 1900, 55);
 let coche8 = new Coche("Kart", "yoshi", 190, 1750, 90);
 
+// Traductor/DICCIONARIO de JS
 
 let allCars = {
     1: coche1,

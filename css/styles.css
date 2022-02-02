@@ -50,6 +50,7 @@ body {
     object-fit: contain;
 }
 
+
 .designScreen2 {
     background-color: black;
     display: flex;
@@ -119,7 +120,12 @@ object-fit: contain;
 }
 
 .designScreen4 {
-    background-color: violet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
 
     height: 100vh;
     width: 100vw;
@@ -142,3 +148,5 @@ object-fit: contain;
     align-items: top;
     height: 30vh;
 }
+
+
