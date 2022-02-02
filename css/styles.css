@@ -197,3 +197,13 @@ object-fit: contain;
     padding: 1em;
     background-color: yellow;
 }
+.ganador{
+    background-color: black;
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10rem;
+}
