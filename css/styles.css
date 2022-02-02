@@ -72,8 +72,8 @@ body {
 }
 
 .designScreen2 img {
-    height: 20em;
-    width: 20em;
+    height: 18em;
+    width: 18em;
     display: flex;
     object-fit: contain;
     justify-content: center;

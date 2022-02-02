@@ -67,7 +67,7 @@ const comprobarEquipos = () => {
                     document.getElementById('ganador').innerHTML += 'EL GANADOR ES ' + equipo1.nombre.toUpperCase();
                     document.getElementById("kartGanador").src = "img/" + equipo1.nombre + ".png";
                 } else {
-                    document.getElementById('ganador').innerHTML += 'EL GANADOR ES' + equipo2.nombre.toUpperCase();
+                    document.getElementById('ganador').innerHTML += 'EL GANADOR ES ' + equipo2.nombre.toUpperCase();
                     document.getElementById("kartGanador").src = "img/" + equipo2.nombre + ".png";
                 }
             }
@@ -83,6 +83,7 @@ const comprobarEquipos = () => {
 const cleanGame = () => {
     equipo1 = "";
     equipo2 = "";
+    ganador = "";
     metrosEquipo1 = 0;
     metrosEquipo2 = 0;
     cambiaPantalla(1);
