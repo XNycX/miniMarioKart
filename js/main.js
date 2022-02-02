@@ -1,10 +1,4 @@
 
-const cleanGame = () => {
-    equipo1 = "";
-    equipo2 = "";
-    ganador = "";
-}
-
 
 const cambiaPantalla = (cambio) => {
 
@@ -45,7 +39,8 @@ const selectKart = (numeroCoche) => {
             cambiaPantalla(3);
         }, 2500)
         
-        comprobarEquipos()
+        comprobarEquipos();
+        
 
     }
 

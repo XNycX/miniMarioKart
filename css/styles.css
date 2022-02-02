@@ -103,7 +103,6 @@ object-fit: contain;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
     background-color: black;
 
     height: 90vh;
@@ -118,6 +117,7 @@ object-fit: contain;
     border-width: 0.5em;
     border-color: blue;
     margin-top: 1em;
+   
 }
 #coche2{
     height: 25em;
@@ -152,7 +152,6 @@ object-fit: contain;
     background-color: black;
     color: red;
     display: flex;
-    font-family: "Formula1-Bold";
     font-size: 1.5em;
     flex-direction: row;
     justify-content: space-around;
@@ -207,3 +206,4 @@ object-fit: contain;
     align-items: center;
     height: 10rem;
 }
+
