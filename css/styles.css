@@ -159,5 +159,13 @@ object-fit: contain;
     align-items: center;
     height: 0em;
 }
+.reiniciar{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0em;
+    
+}
 
 
