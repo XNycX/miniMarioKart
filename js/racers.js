@@ -38,16 +38,8 @@ let allCars = {
     8: coche8,
 
 };
-
-
 //Generando variables basicas de entorno
-
 let equipo1 = "";
-
 let equipo2 = "";
-
-
-// let corredor1 = "";
-// let corredor2 = "";
 
 let ganador = "";

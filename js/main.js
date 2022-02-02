@@ -53,7 +53,7 @@ let metrosEquipo2 = 0;
 let metrosGanar = 3000;
 
 
-function comprobarEquipos() {
+const comprobarEquipos = () => {
     
     if ((equipo1 !== "") && (equipo2 !== "")){
         let metrosRecorridos = window.setInterval(function () {
@@ -63,16 +63,15 @@ function comprobarEquipos() {
                 document.getElementById("botonResultado").style.display = "block";
                 clearInterval(metrosRecorridos);
                 if (metrosEquipo1 > metrosEquipo2) {
-                    console.log(document.getElementById("kartGanador").src = "img/" + equipo1.marca + ".png")
-                    document.getElementById("kartGanador").src = "img/" + equipo1.marca + ".png";
+                    document.getElementById("kartGanador").src = "img/" + equipo1.nombre + ".png";
                 }
                 else {
                     console.log(equipo2)
-                    document.getElementById("kartGanador").src = "img/" + equipo2.marca + ".png";
+                    document.getElementById("kartGanador").src = "img/" + equipo2.nombre + ".png";
                 }
             }
-            document.getElementById("coche1").src = "img/" + equipo1.marca + ".png";
-            document.getElementById("coche2").src = "img/" + equipo2.marca + ".png";
+            document.getElementById("coche1").src = "img/" + equipo1.nombre + ".png";
+            document.getElementById("coche2").src = "img/" + equipo2.nombre + ".png";
             document.getElementById("contadorCoche1").innerHTML = "Metros recorridos: " + metrosEquipo1.toFixed(2);
             document.getElementById("contadorCoche2").innerHTML = "Metros recorridos: " + metrosEquipo2.toFixed(2);
         }, 1000)
