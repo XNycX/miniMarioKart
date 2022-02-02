@@ -84,3 +84,13 @@ function comprobarEquipos() {
     
     }
 }
+
+const cleanGame = () => {
+    equipo1 = "";
+    equipo2 = "";
+    metrosEquipo1 = 0;
+    metrosEquipo2 = 0;
+    cambiaPantalla(1);
+    document.getElementById("botonResultado").style.display = "none"
+    location.reload();
+}
