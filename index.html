@@ -36,7 +36,7 @@
 
         <div class="designScreen2">
             <img id="5" class="seleccionPersonajes" onclick="selectKart(5)" src="img/peach.png" alt="peach">
-            <img id="6" class="seleccionPersonajes" onclick="selectKart(6)" src="img/daisy.png" alt="daisy">
+            <img id="6" class="seleccionPersonajes" onclick="selectKart(6)" src="img/estela.png" alt="daisy">
             <img id="7" class="seleccionPersonajes" onclick="selectKart(7)" src="img/bowser.png" alt="bowser">
             <img id="8" class="seleccionPersonajes" onclick="selectKart(8)" src="img/yoshi.png" alt="yoshi">
         </div>
@@ -46,7 +46,11 @@
 
     <section id="pantalla3" style="display:none">
         <div class="designScreen3">
-            <img class="seleccionPersonajes" id="coche1" src="" alt="Coche1" />
+            <div class="">
+                <img class="seleccionPersonajes" id="coche1" src="" alt="Coche1" />
+                <div id="btnAcelerar">Acelerar</div>
+                
+            </div>
             <img class="seleccionPersonajes" id="coche2" src="" alt="Coche2" />
         </div>
 
@@ -62,9 +66,7 @@
 
     <section id="pantalla4" style="display:none">
         <div class="designScreen4">
-        <div class="ganador">
-            EL GANADOR ES
-        </div>
+        <div class="ganador" id="ganador"></div>
             <img class="seleccionPersonajes" id="kartGanador" src="" alt="kartGanador" />
         </div>
         <div class="reiniciar" onclick="cleanGame()" ><p>Reiniciar juego</p></div>

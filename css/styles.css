@@ -206,4 +206,8 @@ object-fit: contain;
     align-items: center;
     height: 10rem;
 }
+#btnAcelerar{
+    color:red;
+}
+
 
