@@ -207,7 +207,22 @@ object-fit: contain;
     height: 10rem;
 }
 #btnAcelerar{
-    color:red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
+}
+#btnAcelerar img{
+    justify-content:center;
+    align-items: center;
+    margin-left: 6em;
+    height: 12em;
+}
+#btnAcelerar:hover:active{
+
+    
+
 }
 
 
