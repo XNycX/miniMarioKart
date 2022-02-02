@@ -168,4 +168,15 @@ object-fit: contain;
     
 }
 
+.reiniciar p{
+    color: white;
+    font-weight: bolder;
+    border-radius: 1em;
+    border-color: red;
+    border-style: solid;
+    padding: 1em;
+    
+    font-size: 2em;
+
+}
 
