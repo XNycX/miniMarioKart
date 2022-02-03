@@ -8,6 +8,7 @@ class Coche {
         this.peso = peso;
         this.frenada = frenada;
         this.metros = 0;
+        this.metrosGanar = 0;
 
     }
 };

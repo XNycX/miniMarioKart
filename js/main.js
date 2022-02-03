@@ -46,24 +46,24 @@ const selectKart = (numeroCoche) => {
 }
 //Algoritmo
 
-let metrosEquipo1 = 0;
-let metrosEquipo2 = 0;
+
+
 let metrosGanar = 3000;
 
 const acelerar = () => {
-    metrosEquipo1 += Math.random() * (200 - 50) + 50;
+    equipo1.metros += Math.random() * (200 - 50) + 50;
 }
 
 const comprobarEquipos = () => {
     if ((equipo1 !== "") && (equipo2 !== "")) {
         let metrosRecorridos = window.setInterval(() => {
             setInterval(() => {
-                metrosEquipo2 += Math.random() * (200 - 50) + 50;
+                equipo2.metros += Math.random() * (200 - 50) + 50;
             }, 2000);
-            if (metrosEquipo1 >= metrosGanar || metrosEquipo2 >= metrosGanar) {
+            if (equipo1.metros >= metrosGanar || equipo2.metros >= metrosGanar) {
                 document.getElementById("botonResultado").style.display = "block";
                 clearInterval(metrosRecorridos);
-                if (metrosEquipo1 > metrosEquipo2) {
+                if (equipo1.metros > equipo2.metros) {
                     document.getElementById('ganador').innerHTML += 'EL GANADOR ES ' + equipo1.nombre.toUpperCase();
                     document.getElementById("kartGanador").src = "img/" + equipo1.nombre + ".png";
                 } else {
@@ -74,8 +74,8 @@ const comprobarEquipos = () => {
             document.getElementById("coche1").src = "img/" + equipo1.nombre + ".png";
             document.getElementById("coche2").src = "img/" + equipo2.nombre + ".png";
             document.getElementById('btnAcelerar').addEventListener('click', acelerar)
-            document.getElementById("contadorCoche1").innerHTML = "Metros recorridos: " + metrosEquipo1.toFixed(0);
-            document.getElementById("contadorCoche2").innerHTML = "Metros recorridos: " + metrosEquipo2.toFixed(0);
+            document.getElementById("contadorCoche1").innerHTML = "Metros recorridos: " + equipo1.metros.toFixed(0);
+            document.getElementById("contadorCoche2").innerHTML = "Metros recorridos: " + equipo2.metros.toFixed(0);
         }, 800)
     }
 }
@@ -84,9 +84,10 @@ const cleanGame = () => {
     equipo1 = "";
     equipo2 = "";
     ganador = "";
-    metrosEquipo1 = 0;
-    metrosEquipo2 = 0;
+    equipo1.metros = 0;
+    equipo2.metros = 0;
     cambiaPantalla(1);
-    document.getElementById("botonResultado").style.display = "none";
     location.reload();
+    document.getElementById("botonResultado").style.display = "none";
+    
 }
