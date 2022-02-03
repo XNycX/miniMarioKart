@@ -103,7 +103,6 @@ const cleanGame = () => {
     equipo1.metros = 0;
     equipo2.metros = 0;
     cambiaPantalla(1);
-    location.reload();
     document.getElementById("botonResultado").style.display = "none";
     
 }
