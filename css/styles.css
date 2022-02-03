@@ -53,7 +53,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40em;
+    height: 39em;
     width: 70em;
     margin-top: 1em;
     object-fit: contain;
@@ -72,8 +72,8 @@ body {
 }
 
 .designScreen2 img {
-    height: 18em;
-    width: 18em;
+    height: 15em;
+    width: 15em;
     display: flex;
     object-fit: contain;
     justify-content: center;
