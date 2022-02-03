@@ -59,7 +59,7 @@ const comprobarEquipos = () => {
         let metrosRecorridos = window.setInterval(() => {
             setInterval(() => {
                 metrosEquipo2 += Math.random() * (200 - 50) + 50;
-            }, 1000);
+            }, 2000);
             if (metrosEquipo1 >= metrosGanar || metrosEquipo2 >= metrosGanar) {
                 document.getElementById("botonResultado").style.display = "block";
                 clearInterval(metrosRecorridos);
