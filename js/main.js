@@ -19,34 +19,48 @@ const selectKart = (numeroCoche) => {
 
     if (equipo1 == "") {
         equipo1 = allCars[numeroCoche];
-        let cochePrimero = document.getElementById(numeroCoche)
+        let cochePrimero = document.getElementById(numeroCoche);
+       
         //una vez he escogido el coche, invalido el img para que nadie haga onclick sobre él
 
         cochePrimero.onclick = ""
         cochePrimero.classList.add("kartSelected")
+       
 
     } else if (equipo2 == "") {
         equipo2 = allCars[numeroCoche];
         let cocheSegundo = document.getElementById(numeroCoche)
         cocheSegundo.onclick = ""
         cocheSegundo.classList.add("kartSelected")
+       
 
         //una vez he escogido los dos coches.....
 
         setTimeout(() => {
             cambiaPantalla(3);
+            verEstadisticas();
         }, 2500)
 
         comprobarEquipos();
 
-
+        // setTimeout(() => {
+        // }, )
     }
 
 
 }
+
+const verEstadisticas = () => {
+    estadisticasEquipo1.innerHTML = `<div>Nombre: ${equipo1.nombre}<br>Velocidad: ${equipo1.velocidad}<br>Peso: ${equipo1.peso}</div>`;
+    
+    estadisticasEquipo2.innerHTML = `<div>Nombre: ${equipo2.nombre}<br>Velocidad: ${equipo2.velocidad}<br>Peso: ${equipo2.peso}</div>`;
+                                           
+}
+
 //Algoritmo
 
-
+let estadisticasEquipo1 = document.getElementById("estadisticas1")
+let estadisticasEquipo2 = document.getElementById("estadisticas2")
 
 let metrosGanar = 3000;
 
@@ -73,12 +87,14 @@ const comprobarEquipos = () => {
             }
             document.getElementById("coche1").src = "img/" + equipo1.nombre + ".png";
             document.getElementById("coche2").src = "img/" + equipo2.nombre + ".png";
+         
             document.getElementById('btnAcelerar').addEventListener('click', acelerar)
             document.getElementById("contadorCoche1").innerHTML = "Metros recorridos: " + equipo1.metros.toFixed(0);
             document.getElementById("contadorCoche2").innerHTML = "Metros recorridos: " + equipo2.metros.toFixed(0);
         }, 800)
     }
 }
+
 
 const cleanGame = () => {
     equipo1 = "";

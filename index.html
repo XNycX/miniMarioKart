@@ -46,17 +46,21 @@
 
     <section id="pantalla3" style="display:none">
         <div class="designScreen3">
-            <div class="">
+            <div class="contenedorPersonaje">
                 <img class="seleccionPersonajes" id="coche1" src="" alt="Coche1" />
                 <div id="btnAcelerar"><img src="img/button.png" alt="Acelerar"></div>
+                <div id="estadisticas1" class="estadisticasMostrar"></div>
+                <div id="contadorCoche1" class="contadorMetros">Metros recorridos:</div>
 
             </div>
-            <img class="seleccionPersonajes" id="coche2" src="" alt="Coche2" />
+            <div class="contenedorPersonaje">
+                <img class="seleccionPersonajes" id="coche2" src="" alt="Coche2" />
+                <div id="estadisticas2" class="estadisticasMostrar"></div>
+                <div id="contadorCoche2" class="contadorMetros">Metros recorridos:</div>
+            </div>
         </div>
-
-        <div class="contadorMetros">
-            <div id="contadorCoche1">Metros recorridos:</div>
-            <div id="contadorCoche2">Metros recorridos:</div>
+            
+            
     </section>
     <div class="espacioVacio">
         <div id="botonResultado" style="display:none" onclick="cambiaPantalla(4)">

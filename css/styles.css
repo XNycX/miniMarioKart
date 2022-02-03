@@ -118,8 +118,8 @@ body {
     align-items: center;
     background-color: black;
 
-    height: 90vh;
-    width: 90vw;
+    height: 100vh;
+    width: 100vw;
 }
 
 #coche1 {
@@ -174,7 +174,12 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 0em;
+    height: 2em;
+    margin-top: 1em;
+    border: azure;
+    border-radius: 1em;
+    border-style:solid;
+    padding: 1em;
 }
 
 .reiniciar {
@@ -229,9 +234,13 @@ body {
 
 #btnAcelerar {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content:center;
     position: absolute;
+    margin-top: 20em;
+    margin-left: -25em;
+    
+  
 
 }
 
@@ -264,4 +273,20 @@ body {
     justify-content: center;
     align-items: center;
     height: 20em;
+}
+
+.contenedorPersonaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.estadisticasMostrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: red;
+    font-size: 1.5em;
+
 }
