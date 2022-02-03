@@ -72,7 +72,7 @@ body {
 }
 
 .designScreen2 img {
-    height: 15em;
+    height: 12em;
     width: 15em;
     display: flex;
     object-fit: contain;
@@ -86,8 +86,9 @@ body {
     font-size: 2em;
     font-weight: bold;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+  
 }
 
 .seleccionPersonajes {
