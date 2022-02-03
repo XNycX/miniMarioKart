@@ -161,7 +161,9 @@ body {
 .espacioVacio {
     background-color: black;
     display: flex;
-    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    
 }
 
 .contadorMetros {
