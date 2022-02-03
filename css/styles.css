@@ -123,26 +123,27 @@ body {
 }
 
 #coche1 {
-    height: 25em;
+    height: 20em;
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: center;
     border-style: ridge;
     border-width: 0.5em;
     border-color: blue;
-    margin-top: 1em;
+    margin-bottom: 10em;
+    
 
 }
 
 #coche2 {
-    height: 25em;
+    height: 20em;
     display: flex;
     align-items: center;
     justify-content: center;
     border-style: ridge;
     border-width: 0.5em;
     border-color: blue;
-    margin-top: 1em;
+    margin-bottom: 10em;
 }
 
 .designScreen4 {
@@ -235,10 +236,14 @@ body {
 }
 
 #btnAcelerar img {
+    display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
     margin-left: 6em;
     height: 12em;
+    margin-bottom: 10em;
+    margin-left: 25em;
 }
 
 #btnAcelerar:hover,
