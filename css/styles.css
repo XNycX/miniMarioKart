@@ -223,7 +223,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 1em;
+    height: 4em;
 }
 
 #btnAcelerar {
@@ -252,4 +252,11 @@ body {
 #btnAcelerar:hover:active {
     transform: translateY(0.2em);
     transition: 0.1s;
+}
+
+#kartGanador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20em;
 }
