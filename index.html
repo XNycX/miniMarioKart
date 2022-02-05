@@ -13,11 +13,13 @@
 <body>
     <!-- PANTALLA DE INICIO -->
     <section id="pantalla1">
+        <audio id="audio1" src="audio/Start_Screen.mp3"></audio>
         <div class="designScreen1">
             <img src="img/mario-kart-8-deluxe-nintendo-switch-art.png" alt="">
-            <section onclick="cambiaPantalla(2)">
+            <section onclick="cambiaPantalla(2),cancionPersonaje()">
                 <p>Haz clic para continuar</p>
             </section>
+        
         </div>
 
     </section>
@@ -26,6 +28,7 @@
 
     <section id="pantalla2" style="display:none">
         <div class="designScreen2">
+            <audio id="audio2" src="audio/Character_Screen.mp3"></audio>
             <img id="1" class="seleccionPersonajes" onclick="selectKart(1)" src="img/mario.png" alt="mario">
             <img id="2" class="seleccionPersonajes" onclick="selectKart(2)" src="img/luigi.png" alt="luigi">
             <img id="3" class="seleccionPersonajes" onclick="selectKart(3)" src="img/wario.png" alt="wario">
@@ -46,6 +49,7 @@
 
     <section id="pantalla3" style="display:none">
         <div class="designScreen3">
+            <audio id="audio3" src="audio/Race_Screen.mp3"></audio>
             <div class="contenedorPersonaje">
                 <div class="metros">
                     <div class="bordeMetros">
@@ -63,7 +67,7 @@
 
             </div>
             <div class="espacioVacio">
-                <div id="botonResultado" style="display:none" onclick="cambiaPantalla(4)">
+                <div id="botonResultado" style="display:none" onclick="cambiaPantalla(4),cancionGanador()">
                     <P>MOSTRAR GANADOR</P>
                 </div>
             </div>
@@ -89,6 +93,7 @@
 
     <section id="pantalla4" style="display:none">
         <div class="designScreen4">
+            <audio id="audio4" src="audio/Winning_Screen.mp3"></audio>
             <div class="ganador" id="ganador"></div>
             <img class="seleccionPersonajes" id="kartGanador" src="" alt="kartGanador" />
         </div>

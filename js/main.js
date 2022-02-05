@@ -15,8 +15,14 @@ const cambiaPantalla = (cambio) => {
 
 }
 
-const selectKart = (numeroCoche) => {
+//musica
+const audio1 = document.getElementById('audio1')
+const audio2 = document.getElementById('audio2')
+const audio3 = document.getElementById('audio3')
+const audio4 = document.getElementById('audio4')
 
+const selectKart = (numeroCoche) => {
+    
     if (equipo1 == "") {
         equipo1 = allCars[numeroCoche];
         let cochePrimero = document.getElementById(numeroCoche);
@@ -39,12 +45,8 @@ const selectKart = (numeroCoche) => {
         setTimeout(() => {
             cambiaPantalla(3);
             verEstadisticas();
-        }, 2500)
-
+        }, 3800)
         comprobarEquipos();
-
-        // setTimeout(() => {
-        // }, )
     }
 
 
@@ -69,7 +71,9 @@ const acelerar = () => {
 }
 
 const comprobarEquipos = () => {
-    console.log(equipo1)
+    audio2.pause();
+    audio3.play();
+    audio3.loop = true;
     if ((equipo1 !== "") && (equipo2 !== "")) {
         let metrosRecorridos = window.setInterval(() => {
             setInterval(() => {
@@ -109,11 +113,10 @@ const cleanGame = () => {
     location.reload();
 }
 
-
 const barraMetrosJugador = () => {
-    if (equipo1.metros >= 800 & equipo1.metros < 2000) { //color de la vida entre 2000 y 800
+    if (equipo1.metros >= 800 & equipo1.metros < 2000) { //color de los metros entre 2000 y 800
         metrosJugadorDiv.style.backgroundColor = '#F7D530'
-    } else if (equipo1.metros >= 2000) { //color de la vida de 800 a menos
+    } else if (equipo1.metros >= 2000) { //color de los metros de 2000 a menos
         metrosJugadorDiv.style.backgroundColor = '#F96237'
         metrosJugador.style.color = 'white'
     }
@@ -126,9 +129,9 @@ const barraMetrosJugador = () => {
 }
 
 const barraMetrosCpu = () => {
-    if (equipo2.metros >= 800 & equipo2.metros < 2000) { //color de la vida entre 2000 y 800
+    if (equipo2.metros >= 800 & equipo2.metros < 2000) { //color de los metros entre 2000 y 800
         metrosCpuDiv.style.backgroundColor = '#F7D530'
-    } else if (equipo2.metros >= 2000) { //color de la vida de 800 a menos
+    } else if (equipo2.metros >= 2000) { //color de los metros de 2000 a menos
         metrosCpuDiv.style.backgroundColor = '#F96237'
         metrosCpu.style.color = 'white'
     }
@@ -140,3 +143,18 @@ const barraMetrosCpu = () => {
 
     document.getElementById("cocheCPU").src = "img/" + equipo2.nombre + ".png";
 }
+
+//Música funciones
+
+const cancionPersonaje = () => {
+    audio1.pause();
+    audio2.play();
+    audio2.loop = true;
+}
+const cancionGanador = () => {
+    audio3.pause();
+    audio4.play();
+    audio4.loop = true;
+}
+audio1.play();
+audio1.loop = true;

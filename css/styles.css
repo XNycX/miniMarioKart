@@ -11,17 +11,6 @@ body {
     background-color: black;
 }
 
-/* img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-} */
-/* .contenedorGeneral{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
-
 .designScreen1 {
     display: flex;
     align-items: center;
@@ -102,13 +91,11 @@ body {
     padding: 1em;
 }
 
-
 .kartSelected {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     opacity: 0.5;
 }
-
 
 .designScreen3 {
 
@@ -233,10 +220,7 @@ body {
     justify-content:center;
     position: absolute;
     margin-top: 20em;
-    margin-left: -25em;
-    
-  
-
+    margin-left: -25em;   
 }
 
 #btnAcelerar img {
@@ -276,6 +260,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .estadisticasMostrar{
     display: flex;
     justify-content: center;
@@ -300,14 +285,15 @@ body {
 #metrosCpu {
     color: red;
 }
+
 #metrosCpuDiv {
     background-color: blue;
     transition: all 1s ease-out;
     border-radius: 0.5em;
     width: 22.5em;
-    padding: 0.3em;
-    
+    padding: 0.3em; 
 }
+
 .bordeMetros {
     display: flex;
     border: 0.2em solid #AEBBB5;
@@ -315,12 +301,14 @@ body {
     background-color: #4B635B;
     
 }
+
 .metros {
     color: black;
     padding: 1em;
     border-radius: 0.8em;
     width: 23em;
 }
+
 .miniKart{
     width: 5em;
 }
