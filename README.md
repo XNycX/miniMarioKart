@@ -19,10 +19,10 @@ Necesitaremos simplemente la instalación de un programa para realizar nuestro c
 ## Foto del proyecto final ✌(◕‿-)✌
 
 ### Menu Principal
-![foto](/img/menuInicio.png)
+![foto](/img/menuInicio.PNG)
 ### Selección de personaje
-![foto](/img/menuPersonaje.png)
+![foto](/img/menuPersonaje.PNG)
 ### Pantalla de carrera
-![foto](/img/menuCarrera.png)
+![foto](/img/menuCarrera.PNG)
 ### Pantalla de ganador
-![foto](/img/menuGanador.png)
+![foto](/img/menuGanador.PNG)
