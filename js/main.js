@@ -5,7 +5,7 @@ const cambiaPantalla = (cambio) => {
 
     let pantallaDeseada = "pantalla" + cambio;
 
-    let arrayPantallas = ["pantalla1", "pantalla2", "pantalla3", "pantalla4"]; //aqui meteriamos todas las pantalla que queramos
+    let arrayPantallas = ["pantalla1", "pantalla2", "pantalla3", "pantalla4"]; //aqui pondriamos todas las pantalla en las que queramos desplazarnos
 
     arrayPantallas = arrayPantallas.filter(valor => !pantallaDeseada.includes(valor));
 
@@ -18,7 +18,7 @@ const cambiaPantalla = (cambio) => {
 
 }
 
-//musica ID
+//Música ID
 const audio1 = document.getElementById('audio1')
 const audio2 = document.getElementById('audio2')
 const audio3 = document.getElementById('audio3')
@@ -32,7 +32,7 @@ const selectKart = (numeroCoche) => {
         equipo1 = allCars[numeroCoche];
         let cochePrimero = document.getElementById(numeroCoche);
 
-        //una vez he escogido el coche, invalido el img para que nadie haga onclick sobre él
+        //Una vez he escogido el coche, invalido el img para que nadie haga onclick sobre él
 
         cochePrimero.onclick = ""
         cochePrimero.classList.add("kartSelected")
@@ -45,7 +45,7 @@ const selectKart = (numeroCoche) => {
         cocheSegundo.classList.add("kartSelected")
 
 
-        //una vez he escogido los dos coches
+        //Una vez he escogido los dos coches
 
         setTimeout(() => {
             cambiaPantalla(3);
@@ -57,7 +57,7 @@ const selectKart = (numeroCoche) => {
 
 }
 
-//Estadisticas de los personajes
+//Estadistícas de los personajes
 
 const verEstadisticas = () => {
     estadisticasEquipo1.innerHTML = `<div>Nombre: ${equipo1.nombre}<br>Velocidad: ${equipo1.velocidad}<br>Frenada: ${equipo1.frenada}</div>`;
@@ -69,7 +69,7 @@ const verEstadisticas = () => {
 let estadisticasEquipo1 = document.getElementById("estadisticas1")
 let estadisticasEquipo2 = document.getElementById("estadisticas2")
 
-//Pantalla de carrera
+//Aquí empieza la Pantalla de carrera//
 
 let metrosGanar = 3000;
 
@@ -78,6 +78,8 @@ let metrosGanar = 3000;
 const acelerar = () => {
     equipo1.metros += Math.random() * (equipo1.velocidad - equipo1.frenada);
 }
+
+//Carrera para saber quien es el ganador
 
 const comprobarEquipos = () => {
     audio2.pause();
