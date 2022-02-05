@@ -288,5 +288,45 @@ body {
 
     color: red;
     font-size: 1.5em;
+}
 
+#metrosJugador {
+    color: red;
+}
+
+#metrosJugadorDiv {
+    background-color: rgb(13, 255, 25);
+    transition: all 1s ease-out;
+    border-radius: 0.5em;
+    width: 22.5em;
+    padding: 0.3em;
+    max-width: 22.5em;
+}
+
+#metrosCpu {
+    color: red;
+}
+#metrosCpuDiv {
+    background-color: rgb(13, 255, 25);
+    transition: all 1s ease-out;
+    border-radius: 0.5em;
+    width: 22.5em;
+    padding: 0.3em;
+    max-width: 22.5em;
+}
+.bordeMetros {
+    display: flex;
+    border: 0.2em solid #AEBBB5;
+    border-radius: 0.5em;
+    background-color: #4B635B;
+    max-width: 30em;
+}
+.metros {
+    color: black;
+    padding: 1em;
+    border-radius: 0.8em;
+    width: 400px;
+}
+.miniKart{
+    width: 5em;
 }
