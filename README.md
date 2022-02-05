@@ -1,4 +1,4 @@
-# miniMarioKart
+# Mini-MarioKart
 
 Es el tercer proyecto que realizo en GeekHubs Academy, consiste en la realización de un videojuego utilizando Html, CSS y JavaScript Vanilla.
 
