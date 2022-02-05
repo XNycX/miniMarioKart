@@ -1,3 +1,6 @@
+//Cambio de pantallas
+
+
 const cambiaPantalla = (cambio) => {
 
     let pantallaDeseada = "pantalla" + cambio;
@@ -21,6 +24,8 @@ const audio2 = document.getElementById('audio2')
 const audio3 = document.getElementById('audio3')
 const audio4 = document.getElementById('audio4')
 
+//Selección de personaje
+
 const selectKart = (numeroCoche) => {
 
     if (equipo1 == "") {
@@ -40,7 +45,7 @@ const selectKart = (numeroCoche) => {
         cocheSegundo.classList.add("kartSelected")
 
 
-        //una vez he escogido los dos coches.....
+        //una vez he escogido los dos coches
 
         setTimeout(() => {
             cambiaPantalla(3);
@@ -52,6 +57,8 @@ const selectKart = (numeroCoche) => {
 
 }
 
+//Estadisticas de los personajes
+
 const verEstadisticas = () => {
     estadisticasEquipo1.innerHTML = `<div>Nombre: ${equipo1.nombre}<br>Velocidad: ${equipo1.velocidad}<br>Frenada: ${equipo1.frenada}</div>`;
 
@@ -59,12 +66,14 @@ const verEstadisticas = () => {
 
 }
 
-//Algoritmo
-
 let estadisticasEquipo1 = document.getElementById("estadisticas1")
 let estadisticasEquipo2 = document.getElementById("estadisticas2")
 
+//Pantalla de carrera
+
 let metrosGanar = 3000;
+
+//Botón acelerar
 
 const acelerar = () => {
     equipo1.metros += Math.random() * (equipo1.velocidad - equipo1.frenada);
@@ -101,6 +110,7 @@ const comprobarEquipos = () => {
     }
 }
 
+//Reiniciar el juego
 
 const cleanGame = () => {
     equipo1 = "";
@@ -112,6 +122,8 @@ const cleanGame = () => {
     document.getElementById("botonResultado").style.display = "none";
     location.reload();
 }
+
+//Barras de metros de Jugador y CPU
 
 const barraMetrosJugador = () => {
     if (equipo1.metros >= 800 & equipo1.metros < 2000) { //color de los metros entre 2000 y 800
@@ -156,5 +168,9 @@ const cancionGanador = () => {
     audio4.play();
     audio4.loop = true;
 }
-audio1.play();
-audio1.loop = true;
+const cancionInicio = () => {
+    audio1.play();
+    audio1.loop = true;
+}
+
+
