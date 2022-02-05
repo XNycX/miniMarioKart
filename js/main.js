@@ -15,14 +15,14 @@ const cambiaPantalla = (cambio) => {
 
 }
 
-//musica
+//musica ID
 const audio1 = document.getElementById('audio1')
 const audio2 = document.getElementById('audio2')
 const audio3 = document.getElementById('audio3')
 const audio4 = document.getElementById('audio4')
 
 const selectKart = (numeroCoche) => {
-    
+
     if (equipo1 == "") {
         equipo1 = allCars[numeroCoche];
         let cochePrimero = document.getElementById(numeroCoche);
