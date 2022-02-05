@@ -16,6 +16,9 @@ Necesitaremos simplemente la instalación de un programa para realizar nuestro c
 
 * **Cristian Santamaria** - *Realización del proyecto total*
 
+## Instrucciones de juego ✒️
+Cuando lleguemos a la pantalla de carrera debemos pulsar rapidamente el siguiente boton para acelearar: ![foto](/img/button.PNG)
+
 ## Foto del proyecto final ✌(◕‿-)✌
 
 ### Menu Principal
