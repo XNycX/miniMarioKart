@@ -11,6 +11,9 @@ Necesitaremos simplemente la instalación de un programa para realizar nuestro c
 ## Construido con 🛠️
 
 * [Visual studio code](https://code.visualstudio.com/Download/) - El IDE utilizado para la realización de este proyecto
+* JS
+* HTML
+* CSS
 
 ## Autores ✒️
 
