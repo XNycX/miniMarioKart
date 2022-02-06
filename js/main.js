@@ -23,6 +23,7 @@ const audio1 = document.getElementById('audio1')
 const audio2 = document.getElementById('audio2')
 const audio3 = document.getElementById('audio3')
 const audio4 = document.getElementById('audio4')
+const audio5 = document.getElementById('audio5')
 
 //Selección de personaje
 
@@ -63,7 +64,6 @@ const verEstadisticas = () => {
     estadisticasEquipo1.innerHTML = `<div>Nombre: ${equipo1.nombre}<br>Velocidad: ${equipo1.velocidad}<br>Frenada: ${equipo1.frenada}</div>`;
 
     estadisticasEquipo2.innerHTML = `<div>Nombre: ${equipo2.nombre}<br>Velocidad: ${equipo2.velocidad}<br>Frenada: ${equipo2.frenada}</div>`;
-
 }
 
 let estadisticasEquipo1 = document.getElementById("estadisticas1")
@@ -92,6 +92,7 @@ const comprobarEquipos = () => {
             }, 2000);
             if (equipo1.metros >= metrosGanar || equipo2.metros >= metrosGanar) {
                 document.getElementById("botonResultado").style.display = "block";
+                cancionCarreraGanador();
                 clearInterval(metrosRecorridos);
                 if (equipo1.metros > equipo2.metros) {
                     document.getElementById('ganador').innerHTML += 'EL GANADOR ES ' + equipo1.nombre.toUpperCase();
@@ -166,13 +167,19 @@ const cancionPersonaje = () => {
     audio2.loop = true;
 }
 const cancionGanador = () => {
-    audio3.pause();
+    audio5.pause();
     audio4.play();
     audio4.loop = true;
 }
 const cancionInicio = () => {
     audio1.play();
     audio1.loop = true;
+}
+
+const cancionCarreraGanador =() => {
+    audio3.pause();
+    audio5.play();
+    audio5.loop = true;
 }
 
 
