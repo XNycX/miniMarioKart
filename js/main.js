@@ -19,11 +19,11 @@ const cambiaPantalla = (cambio) => {
 }
 
 //Música ID
-const audio1 = document.getElementById('audio1')
-const audio2 = document.getElementById('audio2')
-const audio3 = document.getElementById('audio3')
-const audio4 = document.getElementById('audio4')
-const audio5 = document.getElementById('audio5')
+const audio1 = document.getElementById('audio1');
+const audio2 = document.getElementById('audio2');
+const audio3 = document.getElementById('audio3');
+const audio4 = document.getElementById('audio4');
+const audio5 = document.getElementById('audio5');
 
 //Selección de personaje
 
@@ -35,15 +35,15 @@ const selectKart = (numeroCoche) => {
 
         //Una vez he escogido el coche, invalido el img para que nadie haga onclick sobre él
 
-        cochePrimero.onclick = ""
-        cochePrimero.classList.add("kartSelected")
+        cochePrimero.onclick = "";
+        cochePrimero.classList.add("kartSelected");
 
 
     } else if (equipo2 == "") {
         equipo2 = allCars[numeroCoche];
         let cocheSegundo = document.getElementById(numeroCoche)
-        cocheSegundo.onclick = ""
-        cocheSegundo.classList.add("kartSelected")
+        cocheSegundo.onclick = "";
+        cocheSegundo.classList.add("kartSelected");
 
 
         //Una vez he escogido los dos coches
@@ -55,7 +55,6 @@ const selectKart = (numeroCoche) => {
         comprobarEquipos();
     }
 
-
 }
 
 //Estadistícas de los personajes
@@ -66,8 +65,8 @@ const verEstadisticas = () => {
     estadisticasEquipo2.innerHTML = `<div>Nombre: ${equipo2.nombre}<br>Velocidad: ${equipo2.velocidad}<br>Frenada: ${equipo2.frenada}</div>`;
 }
 
-let estadisticasEquipo1 = document.getElementById("estadisticas1")
-let estadisticasEquipo2 = document.getElementById("estadisticas2")
+let estadisticasEquipo1 = document.getElementById("estadisticas1");
+let estadisticasEquipo2 = document.getElementById("estadisticas2");
 
 //Aquí empieza la Pantalla de carrera//
 
@@ -104,7 +103,7 @@ const comprobarEquipos = () => {
             }
             document.getElementById("coche1").src = "img/" + equipo1.nombre + ".png";
             document.getElementById("coche2").src = "img/" + equipo2.nombre + ".png";
-            document.getElementById('btnAcelerar').addEventListener('click', acelerar)
+            document.getElementById('btnAcelerar').addEventListener('click', acelerar);
             document.getElementById("contadorCoche1").innerHTML = "Metros recorridos: " + equipo1.metros.toFixed(0);
             document.getElementById("contadorCoche2").innerHTML = "Metros recorridos: " + equipo2.metros.toFixed(0);
             barraMetrosJugador();
@@ -130,10 +129,10 @@ const cleanGame = () => {
 
 const barraMetrosJugador = () => {
     if (equipo1.metros >= 800 & equipo1.metros < 2000) { //color de los metros entre 2000 y 800
-        metrosJugadorDiv.style.backgroundColor = '#F7D530'
+        metrosJugadorDiv.style.backgroundColor = '#F7D530';
     } else if (equipo1.metros >= 2000) { //color de los metros de 2000 a menos
-        metrosJugadorDiv.style.backgroundColor = '#F96237'
-        metrosJugador.style.color = 'white'
+        metrosJugadorDiv.style.backgroundColor = '#F96237';
+        metrosJugador.style.color = 'white';
     }
     metrosJugador.innerHTML = equipo1.metros.toFixed(0)
     metrosJugadorDiv.style.width = (3000 - equipo1.metros.toFixed(0)) / 10 + 'px' //calculo de tamaño barra
@@ -145,10 +144,10 @@ const barraMetrosJugador = () => {
 
 const barraMetrosCpu = () => {
     if (equipo2.metros >= 800 & equipo2.metros < 2000) { //color de los metros entre 2000 y 800
-        metrosCpuDiv.style.backgroundColor = '#F7D530'
+        metrosCpuDiv.style.backgroundColor = '#F7D530';
     } else if (equipo2.metros >= 2000) { //color de los metros de 2000 a menos
-        metrosCpuDiv.style.backgroundColor = '#F96237'
-        metrosCpu.style.color = 'white'
+        metrosCpuDiv.style.backgroundColor = '#F96237';
+        metrosCpu.style.color = 'white';
     }
     if (equipo2.metros >= 3000) {
         metrosCpuDiv.style.width = 0 + 'px' //
@@ -175,8 +174,7 @@ const cancionInicio = () => {
     audio1.play();
     audio1.loop = true;
 }
-
-const cancionCarreraGanador =() => {
+const cancionCarreraGanador = () => {
     audio3.pause();
     audio5.play();
     audio5.loop = true;
