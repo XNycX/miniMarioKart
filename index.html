@@ -12,12 +12,14 @@
 
 <body>
     <!-- PANTALLA DE INICIO -->
-    <section id="pantalla1">
+    <section id="pantalla1" onmousemove="cancionInicio()">
+        <audio id="audio1"src="audio/Start_Screen.mp3"></audio>
         <div class="designScreen1">
             <img src="img/mario-kart-8-deluxe-nintendo-switch-art.png" alt="">
-            <section onclick="cambiaPantalla(2)">
+            <section onclick="cambiaPantalla(2),cancionPersonaje()">
                 <p>Haz clic para continuar</p>
             </section>
+
         </div>
 
     </section>
@@ -26,6 +28,7 @@
 
     <section id="pantalla2" style="display:none">
         <div class="designScreen2">
+            <audio id="audio2" src="audio/Character_Screen.mp3"></audio>
             <img id="1" class="seleccionPersonajes" onclick="selectKart(1)" src="img/mario.png" alt="mario">
             <img id="2" class="seleccionPersonajes" onclick="selectKart(2)" src="img/luigi.png" alt="luigi">
             <img id="3" class="seleccionPersonajes" onclick="selectKart(3)" src="img/wario.png" alt="wario">
@@ -46,27 +49,51 @@
 
     <section id="pantalla3" style="display:none">
         <div class="designScreen3">
-            <div class="">
+            <audio id="audio3" src="audio/Race_Screen.mp3"></audio>
+            <div class="contenedorPersonaje">
+                <div class="metros">
+                    <div class="bordeMetros">
+                        <div id="metrosJugadorDiv">
+                            <p id="metrosJugador"></p>
+                        </div>
+                        <img class="miniKart" id="cocheJugador" src="" alt="Coche1" />
+                    </div>
+                </div>
                 <img class="seleccionPersonajes" id="coche1" src="" alt="Coche1" />
                 <div id="btnAcelerar"><img src="img/button.png" alt="Acelerar"></div>
-
+                <div id="estadisticas1" class="estadisticasMostrar"></div>
+                <div id="contadorCoche1" class="contadorMetros">Metros recorridos:
+                </div>
+                <audio id="audio5" src="audio/Race_Win.mp3"></audio>
             </div>
-            <img class="seleccionPersonajes" id="coche2" src="" alt="Coche2" />
+            <div class="espacioVacio">
+                <div id="botonResultado" style="display:none" onclick="cambiaPantalla(4),cancionGanador()">
+                    <P>MOSTRAR GANADOR</P>
+                </div>
+            </div>
+            <div class="contenedorPersonaje">
+                <div class="metros">
+                    <div class="bordeMetros">
+                        <div id="metrosCpuDiv">
+                            <p id="metrosCpu"></p>
+                        </div>
+                        <img class="miniKart" id="cocheCPU" src="" alt="Coche2" />
+                    </div>
+                </div>
+                <img class="seleccionPersonajes" id="coche2" src="" alt="Coche2" />
+                <div id="estadisticas2" class="estadisticasMostrar"></div>
+                <div id="contadorCoche2" class="contadorMetros">Metros recorridos:</div>
+            </div>
         </div>
 
-        <div class="contadorMetros">
-            <div id="contadorCoche1">Metros recorridos:</div>
-            <div id="contadorCoche2">Metros recorridos:</div>
+
     </section>
-    <div class="espacioVacio">
-        <div id="botonResultado" style="display:none" onclick="cambiaPantalla(4)">
-            <P>MOSTRAR GANADOR</P>
-        </div>
-    </div>
+
     <!-- PANTALLA DEL GANADOR -->
 
     <section id="pantalla4" style="display:none">
         <div class="designScreen4">
+            <audio id="audio4" src="audio/Winning_Screen.mp3"></audio>
             <div class="ganador" id="ganador"></div>
             <img class="seleccionPersonajes" id="kartGanador" src="" alt="kartGanador" />
         </div>

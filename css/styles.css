@@ -11,17 +11,6 @@ body {
     background-color: black;
 }
 
-/* img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-} */
-/* .contenedorGeneral{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
-
 .designScreen1 {
     display: flex;
     align-items: center;
@@ -45,7 +34,7 @@ body {
     border-style: solid;
     padding: 0.5em;
 
-    font-size: 1,5em;
+    font-size: 1, 5em;
 
 }
 
@@ -103,13 +92,11 @@ body {
     padding: 1em;
 }
 
-
 .kartSelected {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     opacity: 0.5;
 }
-
 
 .designScreen3 {
 
@@ -119,8 +106,8 @@ body {
     align-items: center;
     background-color: black;
 
-    height: 90vh;
-    width: 90vw;
+    height: 100vh;
+    width: 100vw;
 }
 
 #coche1 {
@@ -132,8 +119,6 @@ body {
     border-width: 0.5em;
     border-color: blue;
     margin-bottom: 10em;
-    
-
 }
 
 #coche2 {
@@ -152,9 +137,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     background-color: black;
-
     height: 90vh;
     width: 100vw;
 }
@@ -164,7 +147,6 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 0em;
 }
 
 .contadorMetros {
@@ -175,7 +157,12 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 0em;
+    height: 2em;
+    margin-top: 1em;
+    border: azure;
+    border-radius: 1em;
+    border-style: solid;
+    padding: 1em;
 }
 
 .reiniciar {
@@ -230,10 +217,11 @@ body {
 
 #btnAcelerar {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     position: absolute;
-
+    margin-top: 20em;
+    margin-left: -25em;
 }
 
 #btnAcelerar img {
@@ -243,7 +231,7 @@ body {
     position: absolute;
     margin-left: 6em;
     height: 12em;
-    margin-bottom: 10em;
+    margin-bottom: 3em;
     margin-left: 25em;
 }
 
@@ -260,9 +248,68 @@ body {
     transition: 0.1s;
 }
 
-#kartGanador{
+#kartGanador {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 20em;
+}
+
+.contenedorPersonaje {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.estadisticasMostrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: red;
+    font-size: 1.5em;
+}
+
+#metrosJugador {
+    color: red;
+}
+
+#metrosJugadorDiv {
+    background-color: blue;
+    transition: all 1s ease-out;
+    border-radius: 0.5em;
+    width: 22.5em;
+    padding: 0.3em;
+}
+
+#metrosCpu {
+    color: red;
+}
+
+#metrosCpuDiv {
+    background-color: blue;
+    transition: all 1s ease-out;
+    border-radius: 0.5em;
+    width: 22.5em;
+    padding: 0.3em;
+}
+
+.bordeMetros {
+    display: flex;
+    border: 0.2em solid #AEBBB5;
+    border-radius: 0.5em;
+    background-color: #4B635B;
+
+}
+
+.metros {
+    color: black;
+    padding: 1em;
+    border-radius: 0.8em;
+    width: 23em;
+}
+
+.miniKart {
+    width: 5em;
 }
